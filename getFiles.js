@@ -9,10 +9,10 @@ function getFiles(callback){
         files.forEach(function (file) {
             filesList.push("./video/" + file.toString());
         });
+        filesList.sort();
         callback(filesList);
-
     });
-};
+}
 
 module.exports.getFiles = getFiles;
 module.exports.filesList = filesList;

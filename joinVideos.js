@@ -3,10 +3,10 @@ var getFile = require('./getFiles');
 
 getFile.getFiles(function (list) {
     console.log(list);
-    var mergedVideo = ffmpeg();
-    var videoNames = list;
 
-    videoNames.forEach(function(videoName){
+    var mergedVideo = ffmpeg();
+
+    list.forEach(function(videoName){
         mergedVideo = mergedVideo.addInput(videoName);
     });
 
