@@ -1,8 +1,7 @@
 var fs = require('fs');
 
-var filesList = [];
-
 function getFiles(callback){
+    var filesList = [];
     fs.readdir('./video', function(err, files) {
         if (err)
             throw err;
@@ -12,10 +11,11 @@ function getFiles(callback){
         filesList.sort();
         callback(filesList);
     });
+    module.exports.filesList = filesList;
 }
 
 module.exports.getFiles = getFiles;
-module.exports.filesList = filesList;
+
 
 
 
