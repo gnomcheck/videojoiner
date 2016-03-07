@@ -13,7 +13,6 @@ function getFiles(callback){
     });
     module.exports.filesList = filesList;
 }
-
 module.exports.getFiles = getFiles;
 
 
