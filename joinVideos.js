@@ -1,5 +1,5 @@
-var ffmpeg = require('./node_modules/fluent-ffmpeg/');
-var getFile = require('./getFiles');
+var ffmpeg = require('./node_modules/fluent-ffmpeg/'),
+    getFile = require('./getFiles');
 
 getFile.getFiles(function (list) {
     console.log(list);
