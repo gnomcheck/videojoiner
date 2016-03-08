@@ -1,5 +1,8 @@
 var fs = require('fs');
 
+/*
+Files from dir './video/' get read and pushed into 'files'
+ */
 function getFiles(callback){
     var filesList = [];
     fs.readdir('./video', function(err, files) {
